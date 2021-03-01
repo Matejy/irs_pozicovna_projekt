@@ -1,0 +1,201 @@
+body {
+    margin: 0;
+}
+#login { 
+    display: block;
+}
+#logbutn {
+    border: 1px solid white;
+    color: white;
+    background: transparent;
+    font-family: 'Montserrat', sans-serif;    
+    padding: 13px;
+    transition: 0.3s;
+    font-size: 15px;
+    cursor: pointer;
+    outline: none;
+}
+#logbutn:hover {
+    background-color: white;
+    color: white;
+}
+form {
+    font-family: 'Montserrat', sans-serif;    
+}
+input {
+    border: 0;
+    outline: none;
+    border-bottom: 1px solid black;
+}
+#bdy {
+    margin: 0;
+}
+#cont {
+    background-color: #9e2f2f;
+    font-family: 'Montserrat', sans-serif; 
+    margin: 0px 400px;   
+    
+}
+#header {
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 35px;
+    color: white;
+    padding-top: 20px;
+    margin: 10px 10px;
+    text-align: left;
+}
+#colu {
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 27px;
+    color: white;
+    text-align: left;
+    margin: 10px 10px;
+    
+}
+#imuge {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("08204074.jpg");
+    background-size: cover;
+    padding: 120px;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    transition: 0.3s;
+}
+#para {
+    color: white;
+    line-height: 25px;
+    text-align: left;
+    margin: 10px 10px;
+}
+#imugelink {
+    transition: 0.3s;
+    display: inline;
+}
+#floaty {
+    position: fixed;
+    top: 4rem;
+    left: 0px;
+}
+#futt {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: #9e2f2f;
+    margin-left: 4px;
+    cursor: pointer;
+}
+#underfut {
+    position: relative;
+    top: 0;
+    left: 0;
+    text-align: left;
+    background-color: #9e2f2f;
+    padding: 30px 20px;
+    font-size: 12px;
+}
+#underfut a {
+    display: list-item;
+    list-style-type: none;
+    color: white;
+    transition: 0.3s;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;    
+    text-decoration: none;
+}
+#underfut a:active {
+    color: white;
+}
+#underfut a:hover {
+    color: black;
+}
+#bckfut::before {
+    color: white;
+    position: relative;
+    font-size: 20px;
+    content: '←';
+    cursor: pointer;
+}
+#imuge:hover {
+    opacity: 0.5;
+    background-color: #ebebeb;
+}
+#vertpanel {
+    position: relative;
+    top: 10px;
+    cursor: pointer;
+    text-align: center;
+    margin-bottom: 2rem;
+    padding: 10px;
+    margin-left: 3em;
+}
+#linksv1, #linksv2, #linksv3, #linksv4, #linksv5  {
+    color: black;
+    padding: 0.6em;
+    font-size: 1.5em;
+    font-family: 'Montserrat', sans-serif;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    text-decoration: none;
+}
+#linksv1 {
+    background-color: rgb(50,134,171);
+    color: white;
+}
+#linksv2 {
+    background-color: rgb(219,162,10);
+    color: white;
+}
+#linksv3 {
+    background-color: rgb(202,76,77);
+    color: white;
+}
+#linksv4 {
+    background-color: rgb(132,177,58);
+    color: white;
+}
+#linksv5 {
+    background-color: black;
+    color: white;
+}
+#linksv1:hover {
+    background-color: white;
+    color: rgb(50,134,171);
+}
+#linksv2:hover {
+    background-color: white;
+    color: rgb(219,162,10);
+}
+#linksv3:hover {
+    background-color: white;
+    color: rgb(202,76,77);
+}
+#linksv4:hover {
+    background-color: white;
+    color: rgb(132,177,58);
+}
+#linksv5:hover {
+    background-color: white;
+    color: black;
+}
+#horpanelul {
+    list-style-type: none;
+    margin-top: 0px;
+    background-color: #fffffff2;
+    height: 4.9em;
+}
+#horpanel {
+    position: relative;
+    display: inline;
+    cursor: pointer;
+}
+#loginshow {
+    display: none;
+    visibility: hidden;
+}
+#loginshow form { 
+    background-color: #9e2f2f;
+    padding: 30px;
+}
