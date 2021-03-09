@@ -5,16 +5,16 @@ if (isset($_POST['add_new_product'])) {
     $cena = mysqli_real_escape_string($db, $_POST['cena']);
     $popis = mysqli_real_escape_string($db, $_POST['popis']);
 
-    if (empty($nazov)) { array_push($errors, "Username is required"); }
-    if (empty($cena)) { array_push($errors, "Username is required"); }
-    if (empty($popis)) { array_push($errors, "Username is required"); }
+    if (empty($nazov)) { array_push($errors, "Nazov is required"); }
+    if (empty($cena)) { array_push($errors, "Cena is required"); }
+    if (empty($popis)) { array_push($errors, "Popis is required"); }
 
     $produkt_check_query = "SELECT * FROM produkty WHERE nazov='$nazov' LIMIT 1";
     $result = mysqli_query($db, $user_check_query);
     $produkt = mysqli_fetch_assoc($result);
-    if ($produkt) { // if user exists
+    if ($produkt) { 
         if ($produkt['nazov'] === $nazov) {
-        array_push($errors, "Username already exists");
+        array_push($errors, "Nazov already exists");
         }
     }
     if (count($errors) == 0) {
