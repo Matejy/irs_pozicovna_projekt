@@ -9,19 +9,19 @@ if (!isset($_SESSION['loggedin'])) {
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Home Page</title>
+		<title>Požičovňa</title>
 		<link href="style.css" rel="stylesheet" type="text/css">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
 	</head>
 	<body class="loggedin">
 		<nav class="navtop">
 			<div>
-				<h1>Website Title</h1>
-				<a href="logout.php"><i class="fas fa-sign-out-alt"></i>Logout</a>
+				<h1>Požičovňa</h1>
+				<a href="logout.php">Logout</a>
 			</div>
 		</nav>
 		<div class="content">
-			<h2>Home Page</h2>
+			<h2>Hlavná stránka</h2>
 			<p>Prihlásený - <?=$_SESSION['name']?>!</p>
 		</div>
 		<div>
@@ -53,7 +53,7 @@ if (!isset($_SESSION['loggedin'])) {
 				$result = mysqli_query($connection, $query);;				
 				echo "<div>";				
 				while($row = mysqli_fetch_array($result)){ 				
-				echo "<p>" . $row['nazov'] . "</p>";
+				echo "<h2>" . $row['nazov'] . "</h2>";
 				echo "<p>" . $row['cena'] . "</p>";
 				echo "<p>" . $row['popis'] . "</p>";
 				}
